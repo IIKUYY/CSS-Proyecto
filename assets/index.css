@@ -1,0 +1,201 @@
+.roboto-thin {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .roboto-black {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .roboto-thin-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .roboto-light-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .roboto-regular-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .roboto-medium-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .roboto-bold-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .roboto-black-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+  
+@media (min-width:320px)  { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ }
+@media (min-width:600px)  { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ }
+@media (min-width:1281px) {
+    .margins{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .rlight{
+        font-family: roboto;
+        font-weight: 300;
+    }
+    .navitem{
+        margin-right: 15px;
+        text-decoration: none;
+        color: black;
+    }
+    .loginbutton{
+        background: linear-gradient(45deg, rgba(244,118,79,255), rgba(252,83,127,255));
+        border-radius: 30px;
+        height: 30px;
+        width: 100px;
+        color: white;
+        border: none;
+    }
+    header {
+        display: flex;
+        height: 50px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .searcher {
+        height: 250px;
+        width: 100%;
+        background-color: rgba(255,238,231,255);
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        border: none;
+    }
+    .searcher h1 {
+        font-family: roboto;
+        font-weight: 700;
+        font-size: 45px;
+        background: linear-gradient(45deg, rgba(244,118,79,255), rgba(252,83,127,255));
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .searchwrap{
+        margin-top: -30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: fit-content;
+    }
+    .searchterm{
+        border: 0;
+        border-radius: 30px 0 0 30px;
+        height: 50px;
+        width: 600px;
+        padding: 0 0 0 30px;
+    }
+    .searchbutton{
+        height: 50px;
+        width: 30px;
+        border: 0;
+        border-radius: 0 30px 30px 0;
+        cursor: pointer;
+        padding: 0 30px 0 0;
+        background-color: white;
+    }
+    .lupa{
+        height: 20px;
+    }
+    main {
+        display: flex;
+        flex-flow: column;
+    }
+    .filters{
+        margin-top: -20px;
+        justify-self:center;
+        display: flex;
+        flex-flow: row;
+        justify-content: space-evenly;
+    }
+    .foption {
+        display: flex;
+        flex-flow: column;
+        color: rgba(244,118,79,255);
+        font-family: Roboto;
+        font-size: smaller;
+        background-color: #fff;
+        border-radius: 5px;
+        height: 40px;
+        padding: 2px 5px 2px 15px;
+    }
+    .f1 {
+        width: 600px;
+    }
+    .f2 {
+        width: 300px;
+    }
+    .fselect {
+        position: relative;
+        font-family: Roboto;
+        border: solid;
+        border-color: #fff;
+    }
+    .resultscount {
+        font-family: Roboto;
+        font-size: smaller;
+        color: rgba(244,118,79,255);
+    }
+    .cards {
+        display: flex;
+        flex-flow: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        background-color: rgba(253,253,253,255);
+    }
+    .card {
+        height: 500px;
+        width: 400px;
+        background-color: #fff;
+    }
+    .ccbg {
+        height: 200px;
+    }
+}
