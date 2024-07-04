@@ -69,16 +69,15 @@
     font-weight: 900;
     font-style: italic;
   }
-  
-@media (min-width:320px)  { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ }
-@media (min-width:600px)  { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ }
-@media (min-width:1281px) {
+  body {
+    height: 100vh;
+    font-family: Roboto;
+  }
     .margins{
         margin-left: 50px;
         margin-right: 50px;
     }
     .rlight{
-        font-family: roboto;
         font-weight: 300;
     }
     .navitem{
@@ -86,13 +85,16 @@
         text-decoration: none;
         color: black;
     }
-    .loginbutton{
+    .gbutton{
         background: linear-gradient(45deg, rgba(244,118,79,255), rgba(252,83,127,255));
         border-radius: 30px;
         height: 30px;
-        width: 100px;
         color: white;
         border: none;
+        font-weight: 700;
+    }
+    .loginbutton {
+        width: 100px;
     }
     header {
         display: flex;
@@ -111,7 +113,6 @@
         border: none;
     }
     .searcher h1 {
-        font-family: roboto;
         font-weight: 700;
         font-size: 45px;
         background: linear-gradient(45deg, rgba(244,118,79,255), rgba(252,83,127,255));
@@ -119,7 +120,7 @@
         -webkit-text-fill-color: transparent;
     }
     .searchwrap{
-        margin-top: -30px;
+        margin-bottom: 30px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -159,7 +160,6 @@
         display: flex;
         flex-flow: column;
         color: rgba(244,118,79,255);
-        font-family: Roboto;
         font-size: smaller;
         background-color: #fff;
         border-radius: 5px;
@@ -174,12 +174,10 @@
     }
     .fselect {
         position: relative;
-        font-family: Roboto;
         border: solid;
         border-color: #fff;
     }
     .resultscount {
-        font-family: Roboto;
         font-size: smaller;
         color: rgba(244,118,79,255);
     }
@@ -187,15 +185,220 @@
         display: flex;
         flex-flow: row;
         flex-wrap: wrap;
-        justify-content: space-between;
-        background-color: rgba(253,253,253,255);
+        gap: 40px;
     }
+    
     .card {
-        height: 500px;
+        height: 650px;
         width: 400px;
-        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+        padding: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }    
+    .bgeco {
+        height: 300px;
+        background-image: url(images/ecobg.jpg);
+        background-size: cover;
+        background-position: center;
+        margin: -10px -10px 0px -10px;
     }
-    .ccbg {
+    .bgeco2 {
+        height: 300px;
+        background-image: url(https://dummyimage.com/400x300/066d09/ffffff&text=Ecologia);
+        background-size: cover;
+        background-position: center;
+        margin: -10px -10px 0px -10px;
+    }
+    .bgsal {
+        height: 300px;
+        background-image: url(images/salubg.jpg);
+        background-size: cover;
+        background-position: center;
+        margin: -10px -10px 0px -10px;
+    }
+    .bgsal2 {
+        height: 300px;
+        background-image: url(https://dummyimage.com/400x300/06bbcf/ffffff&text=Salud);
+        background-size: cover;
+        background-position: center;
+        margin: -10px -10px 0px -10px;
+    }
+    .etag {
+        border-radius: 5px;
+        font-size: large;
+        font-weight: 500;
+        padding: 0 5px;
+        height: fit-content;
+        width: fit-content;
+        background-color: #4ecd80;
+        margin: -10px 0 10px 0;
+    }
+    .stag {
+        border-radius: 5px;
+        font-size: large;
+        font-weight: 500;
+        padding: 0 5px;
+        height: fit-content;
+        width: fit-content;
+        background-color: #6bacfe;
+        margin: -10px 0 10px 0;
+    } 
+    .ctitle {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+    }
+    
+    a {
+        color: #f85b64;
+        text-decoration: none;
+        margin-bottom: 10px;
+    }
+    ctext {
+        margin-top: auto;
+        margin-bottom: 10px;
+    }
+    .btag {
+        height: fit-content;
+        width: fit-content;
+        padding: 0 5px;
+        border-radius: 2px;
+        margin: auto -10px -10px -10px;
+        font-weight: bold;
+        background-color: #f85b64;
+        color: white;
+    }  
+    .btpg {
+        margin: 30px 0px 30px 0px;
+        position: relative;
+        width: 100%;
+    }
+    
+    .btn-left {
+        float: left;
+        margin-left: 5px;
+    }
+    
+    .first-btn {
+        margin-left: 50px;
+    }
+    
+    .btn-left:first-child {
+        margin-left: 50px;
+    }
+    
+    .btn-right {
+        float: right;
+        margin-right: 50px;
+    }
+    
+    .gbutton {
+        position: relative;
+    }
+    
+    .pbutton {
+        width: 30px;
+    }
+    
+    .vbutton {
+        width: 200px;
+    }
+    
+    .btcont {
+        border: 0;
+        padding: 0;
+        height: 30px;
+        width: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    
+    .btfond {
+        position: absolute;
+        height: 30px;
+        width: 30px;
+        border-radius: 30px;
+        background: linear-gradient(45deg, rgba(244,118,79,255), rgba(252,83,127,255));
+        z-index: -2;
+    }
+    
+    .btcov {
+        position: absolute;
+        height: 25px;
+        width: 25px;
+        border-radius: 30px;
+        background-color: white;
+        z-index: -1;
+    }
+    .grbutton {
+        border-radius: 30px;
+        border: 0px;
+        height: 30px;
+        width: 30px;
+        font-weight: 700;
+        background: linear-gradient(45deg, rgba(244,118,79,255), rgba(252,83,127,255));
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        position: relative;
+        z-index: 1000;
+    }
+    .wavy {
+        padding: 0 50px 0 50px;
+        position: relative;
         height: 200px;
+        margin: 100px 0 0 0;
+        background-image: url(images/wavy.png);
+        background-size: cover;
+        background-position: center;
     }
-}
+    .ebtext {
+        font-size: large;
+        font-weight: 400;
+        position: absolute;
+        bottom: 20px;
+    }
+    .ebbotton {
+        position: absolute;
+        bottom: 40px;
+        right: 10px;
+    }
+    footer {
+        height: 200px;
+        width: 100%;
+        position: relative;
+        background-color: #1d1649;
+        color: #fff;
+    }
+    .column1 {
+        position: absolute;
+        left: 50px;
+        top: 50px;
+        width: 300px;
+        font-size: small;
+        font-weight: 100;
+    }
+    .column2 {
+        position: absolute;
+        right: 50px;
+        top: 50px;
+        width: 700px;
+    }
+    .column2 nav {
+        display: flex;
+        justify-content: space-between;
+    }
+    .column2 a {
+        text-decoration: none;
+        color: #fff;
+    }
+    .f2text {
+        font-weight: 100;
+        margin-top: 20px;
+        font-size: small;
+        position: absolute;
+        right: 50px;
+    }
