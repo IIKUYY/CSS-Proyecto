@@ -5,34 +5,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto bop</title>
-    <link rel="stylesheet" href="assets/index.css">
+    <link rel="stylesheet" href="assets/indexv2.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
 
 </head>
 
 <body>
-    <header class="margins rlight">
-        <img src="assets/images/logosi.png" alt="logosi">
-        <nav class="">
-            <a href="index.html" class="navitem">Actividades</a>
-            <a href="#" class="navitem">Asociaciones</a>
-            <a href="#" class="navitem">Movimientos</a>
-            <a href="#" class="navitem">Recursos</a>
-            <a href="#" class="navitem">Blog</a>
+    <header class="desktop margins">
+        <img src="assets/images/logosi.png" alt="logosi" class="logoup headertop">
+        <nav class="navup">
+            <ul>
+                <li>
+                    <a href="index.html" class="navitem">Actividades</a>
+                </li>
+                <li>
+                    <a href="#" class="navitem">Asociaciones</a>
+                </li>
+                <li>
+                    <a href="#" class="navitem">Movimientos</a>
+                </li>
+                <li>
+                    <a href="#" class="navitem">Recursos</a>
+                </li>
+                <li>
+                    <a href="#" class="navitem">Blog</a>
+                </li>
+            </ul>
         </nav>
-        <button class="loginbutton gbutton">
+        <button class="loginbutton gbutton headertop">
             LOGIN
         </button>
     </header>
+    <header class="movile margins">
+        <a href="#"><img src="assets/images/logosi.png" alt="logosi" class="logoup headertop"></a>
+        <label class="hamburger" for='menu' tabindex="0">
+            🍔
+        </label>
+        <input class="hamburger chc" type='checkbox' />
+        <div class="viewport">
+            <nav>
+                <ul class="navmenu slide-left">
+                    <li>
+                        <a href="index.html" class="navitem">Actividades</a>
+                    </li>
+                    <li>
+                        <a href="#" class="navitem">Asociaciones</a>
+                    </li>
+                    <li>
+                        <a href="#" class="navitem">Movimientos</a>
+                    </li>
+                    <li>
+                        <a href="#" class="navitem">Recursos</a>
+                    </li>
+                    <li>
+                        <a href="#" class="navitem">Blog</a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="loginbutton gbutton headertop menulogin slide-left">
+                LOGIN
+            </button>
+        </div>
+    </header>
     <article class="searcher">
-        <h1>
+        <h2>
             ¿Cómo te gustaría ayudar?
-        </h1>
+        </h2>
         <div class="searchwrap">
             <input type="text" class="searchterm" placeholder="Ingresa cualquier término de búsqueda">
             <button type="submit" class="searchbutton"><img class="lupa" src="assets/images/lupa.png"
@@ -42,19 +83,19 @@
     <form class="filters margins" action="#">
         <div class="foption f1">
             <label for="estasViendo">Estas viendo</label>
-            <select class="fselect" name="viendo" id="estasViendo">
+            <select class="fselect" name="viendo">
                 <option value="">Todas las catergorias</option>
             </select>
         </div>
         <div class="foption f2">
             <label for="ubic">En</label>
-            <select class="fselect" name="ubic" id="ubic">
+            <select class="fselect" name="ubic">
                 <option value="">Monterrey</option>
             </select>
         </div>
         <div class="foption f2">
             <label for="filtro">Por</label>
-            <select class="fselect" name="filtro" id="filtro">
+            <select class="fselect" name="filtro">
                 <option value="">Popularidad</option>
             </select>
         </div>
@@ -66,71 +107,33 @@
     </div>    
     <main class="cards margins">
         <div class="card">
-            <div class="bgeco"></div>
-            <p class="etag">Ecología</p>
-            <h1 class="ctitle">Sembremos 1000 árboles en las colonias de Monterrey</h1>
+            <div class="cbackground ebackground1"></div>
+            <p class="etag ctag">Ecología</p>
+            <h3 class="ctitle">Sembremos 1000 árboles en las colonias de Monterrey</h3>
             <a href="#">Reforestación Extrema</a>
             <p class="ctext">Ayúdanos a reforestar las colonias de Monterrey y su área metropolitana.</p>
             <p class="btag">Quedan sólo 4 lugares</p>
         </div>
         <div class="card">
-            <div class="bgsal"></div>
-            <p class="stag">Salud</p>
-            <h1 class="ctitle">Mass Vaccination en la cierra de Galeana</h1>
+            <div class="cbackground sbackground1"></div>
+            <p class="stag ctag">Salud</p>
+            <h3 class="ctitle">Mass Vaccination en la cierra de Galeana</h3>
             <a href="#">Brigadas Saludables</a>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
         </div>
         <div class="card">
-            <div class="bgsal2"></div>
-            <p class="stag">Salud</p>
-            <h1 class="ctitle">Programas de salud en niños</h1>
+            <div class="cbackground sbackground2"></div>
+            <p class="stag ctag">Salud</p>
+            <h3 class="ctitle">Programas de salud en niños</h3>
             <a href="#">Brigadas Saludables</a>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
         </div>
         <div class="card">
-            <div class="bgeco2"></div>
-            <p class="etag">Ecología</p>
-            <h1 class="ctitle">Platica de Conciencia ambiental para niños</h1>
+            <div class="cbackground ebackground2"></div>
+            <p class="ctag etag">Ecología</p>
+            <h3 class="ctitle">Platica de Conciencia ambiental para niños</h3>
             <a href="">Respira Monterrey</a>
             <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-            <p class="btag">Quedan sólo 4 lugares</p>
-        </div>
-        <div class="card">
-            <div class="bgeco"></div>
-            <p class="etag">Ecología</p>
-            <h1 class="ctitle">Sembremos 1000 árboles en las colonias de Monterrey</h1>
-            <a href="#">Reforestación Extrema</a>
-            <p class="ctext">Ayúdanos a reforestar las colonias de Monterrey y su área metropolitana.</p>
-            <p class="btag">Quedan sólo 4 lugares</p>
-        </div>
-        <div class="card">
-            <div class="bgsal"></div>
-            <p class="stag">Salud</p>
-            <h1 class="ctitle">Mass Vaccination en la cierra de Galeana</h1>
-            <a href="#">Brigadas Saludables</a>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-        </div>
-        <div class="card">
-            <div class="bgsal2"></div>
-            <p class="stag">Salud</p>
-            <h1 class="ctitle">Programas de salud en niños</h1>
-            <a href="#">Brigadas Saludables</a>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-        </div>
-        <div class="card">
-            <div class="bgeco2"></div>
-            <p class="etag">Ecología</p>
-            <h1 class="ctitle">Platica de Conciencia ambiental para niños</h1>
-            <a href="">Respira Monterrey</a>
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-            <p class="btag">Quedan sólo 4 lugares</p>
-        </div>
-                <div class="card">
-            <div class="bgeco"></div>
-            <p class="etag">Ecología</p>
-            <h1 class="ctitle">Sembremos 1000 árboles en las colonias de Monterrey</h1>
-            <a href="#">Reforestación Extrema</a>
-            <p class="ctext">Ayúdanos a reforestar las colonias de Monterrey y su área metropolitana.</p>
             <p class="btag">Quedan sólo 4 lugares</p>
         </div>
     </main>
@@ -161,45 +164,62 @@
                 Ver más resultados
             </button>
         </div>
-    </div>    
-    <div class="wavy">
-        <section class="ebtext">
-            <h2>
-                ¿No ves algo que te guste?
-            </h2>
-            <p>
-                Regístrate para conocer tus preferencias y obtener resultados a tu medida
-            </p>
-        </section>
-        <button class="gbutton vbutton ebbotton">
-            Registrate
-        </button>
     </div>
+    </section>    
+    <div class="wavy">
+        <svg xmlns="http://www.w3.org/2000/svg" width="1209" height="240.996" viewBox="0 0 1209 240.996">
+            <path id="Shape_4" data-name="Shape 4" d="M4202,2127.018s161.585-115.419,383.764-77.908,282.773,39.434,487.639-7.695,337.6,16.351,337.6,16.351V2265H4202Z" transform="translate(-4202 -2024.003)" fill="#fbeee6"/>
+        </svg>
+        <section class="ebtext">
+            <h2>¿No ves algo que te guste?</h2>
+            <p>Regístrate para conocer tus preferencias y obtener resultados a tu medida</p>
+        </section>
+        <button class="gbutton vbutton ebbotton">Regístrate</button>
+    </div>
+    
     <footer>
         <div class="column1">
-            <img src="assets/images/logof.png" alt="logof">
+            <img src="assets/images/logof.png" alt="logodown">
             <p>
                 Bop enlaza a personas con causas, fusionando lo mejor de la tecnología con lo mejor de ti.
                 De la intención a la acción sólo hay un paso
             </p>
         </div>
         <div class="column2">
-            <nav>
-                <a href="#">Nosotros</a>
-                <a href="#">Empresas</a>
-                <a href="#">Escuelas</a>
-                <a href="#">Organizaciones</a>
-                <a href="#">Contacto</a>
+            <nav class="navdown">
+                <ul>
+                    <li>
+                        <a href="#">Nosotros</a>
+                    </li>
+                    <li>
+                        <a href="#">Empresas</a>
+                    </li>
+                    <li>
+                        <a href="#">Escuelas</a>
+                    </li>
+                    <li>
+                        <a href="#">Organizaciones</a>
+                    </li>
+                    <li>
+                        <a href="#">Contacto</a>
+                    </li>
+                </ul>
             </nav>
             <section class="f2text">
                 <h4>
-                    Todos los derechos reservados Go Bop &copy; 2019
+                    Todos los derechos reservados Go Bop &copy; 2024
                 </h4>
-                <p>
-                    <a href="#">Privacidad</a>
-                    &#183;
-                    <a href="#">Términos y Condiciones</a>
-                </p>
+                <nav class="navup">
+                    <ul>
+                        <li>
+                            <a href="#">Privacidad</a> 
+                        </li>
+                        &#183;
+                        <li>
+                            <a href="#">Términos y Condiciones</a>
+                        </li>
+                    </ul>
+                </nav>      
             </section>
         </div>
     </footer>
