@@ -10,6 +10,13 @@ body {
     margin-right: 50px;
 }
 
+@media (max-width: 450px) {
+    .margins {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+}
+
 a {
     color: #f85b64;
     margin-bottom: 10px;
@@ -177,6 +184,12 @@ a {
          padding-top: 75px  ;
      }
  }
+
+ @media (max-width: 850px) {
+    .searcher {
+        height: 300px  ;
+    }
+}
  
  .searcher h2 {
      background: linear-gradient(45deg, rgba(244,118,79,1), rgba(252,83,127,1));
@@ -189,7 +202,7 @@ a {
  
  @media (max-width:450px) {
      .searcher h2 {
-         font-size: 20px;
+         font-size: 25px;
      }
  
  }
@@ -203,6 +216,12 @@ a {
      width: fit-content;
  }
  
+ @media (max-width: 450px) {
+    .searchwrap {
+        width: calc(100vw-50px);
+    }
+}
+
  .searchterm {
      border: 0;
      border-radius: 30px 0 0 30px;
@@ -220,7 +239,7 @@ a {
  
  @media (max-width: 450px) {
      .searchterm {
-         width: 150px;
+         width: 200px;
      }
  }
  
@@ -252,6 +271,15 @@ a {
      justify-self: center;
      margin-top: -20px;
  }
+
+ @media (max-width: 450px) {
+    .filters {
+        width: 100%;
+        margin-top: -70px;
+        flex-direction: column;
+    }
+}
+
  
  .foption {
      background-color: #fff;
@@ -274,6 +302,12 @@ a {
      flex-grow: 2;
      width: calc(768px/30);
  }
+
+ @media (max-width: 450px) {
+    .f1 {
+        width: 80%;
+    }
+}
  
  .f2 {
      flex-grow: 1;
@@ -281,6 +315,13 @@ a {
      width: calc(768px/30);
  }
  
+ @media (max-width: 450px) {
+    .f2 {
+        margin-left: 0px;
+        width: 80%;
+    }
+}
+
  .fselect {
      border: solid;
      border-color: #fff;
